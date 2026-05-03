@@ -34,6 +34,25 @@ type Result struct {
 	CreatedAt  time.Time `json:"created_at"`
 }
 
+// Para detalles de resultados con joins
+type ResultDetail struct {
+	ID         int       `json:"id"`
+	DriverID   int       `json:"driver_id"`
+	RaceID     int       `json:"race_id"`
+	Position   int       `json:"position"`
+	Points     int       `json:"points"`
+	FastestLap bool      `json:"fastest_lap"`
+	CreatedAt  time.Time `json:"created_at"`
+	// Join fields
+	DriverName   string `json:"driver_name"`
+	DriverTeam   string `json:"driver_team"`
+	DriverNumber int    `json:"driver_number"`
+	GrandPrix    string `json:"grand_prix"`
+	Circuit      string `json:"circuit"`
+	Country      string `json:"country"`
+	RaceDate     string `json:"race_date"`
+}
+
 // Para respuestas de error consistentes
 type ErrorResponse struct {
 	Error   string `json:"error"`
