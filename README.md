@@ -26,6 +26,10 @@ API REST para la aplicación F1 Tracker, construida con **Go** y **PostgreSQL**.
 
 ---
 
+## Screenshot
+
+![Screenshot del backend](assets/docs/Screenshot-backend.png)
+
 ## Instalación local
 
 ### 1. Clonar el repositorio
